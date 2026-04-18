@@ -8,4 +8,5 @@ Table configuraciones {
     correo_electronico varchar 
     web varchar 
     logo varchar 
+    
 }

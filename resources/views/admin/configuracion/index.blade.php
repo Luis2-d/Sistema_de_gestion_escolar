@@ -27,8 +27,8 @@
                                         onchange="mostrarImagen(event)" accept="image/*">
                                     <br>
                                     <center>
-                                        <img id="preview" src="{{ url($configuracion->logo) }}"
-                                            style="max-width: 200px; margin-top: 10px;">
+                                        <img id="preview" src="{{ isset($configuracion) ? url($configuracion->logo) : '' }}"
+                                        style="max-width: 200px; margin-top: 10px;">
                                     </center>
                                     @error('logo')
                                         <small style="color: red">{{ $message }}</small>
